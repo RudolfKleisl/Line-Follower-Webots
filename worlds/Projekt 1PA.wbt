@@ -1,0 +1,46 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.021448521828529913 0.8925649367757734 0.4504084752198057 3.043110209930671
+  position 0.021161689004793843 0.7394077809043423 -0.593980164924564
+}
+TinkerbotsBase {
+  translation 0 0.03 0
+  upSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 -1.5707996938995747
+        name "motor_left"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "motor_right"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+  downBSlot TinkerbotsFinger {
+  }
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+  texture "stadium"
+}
+RectangleArena {
+  floorSize 5 5
+  floorTileSize 5 5
+  wallHeight 0.5
+}
